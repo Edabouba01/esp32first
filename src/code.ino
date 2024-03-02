@@ -35,7 +35,7 @@ void sendDataToServer(int value) {
     // Incrémente l'ID
     currentID++;
 
-    // Construire l'objet JSON
+    // Construire l'objet JSON(adaptable pour charque microcontroleur)
     DynamicJsonDocument jsonDocument(1024); // Taille du document JSON, ajustez si nécessaire
     jsonDocument["ID"] = currentID;
     jsonDocument["Type de Mesure"] = "Temperature";
