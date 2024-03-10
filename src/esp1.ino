@@ -21,7 +21,7 @@ void loop() {
     strftime(timeString, sizeof(timeString), "%Y-%m-%d %H:%M:%S", &timeinfo);
     Serial.println(timeString);
 
-    int value = 16;  // Votre logique pour lire la valeur du capteur
+    int value = 45;  // Votre logique pour lire la valeur du capteur
     Serial.println(value, DEC);
 
     // Envoyer les données au serveur
