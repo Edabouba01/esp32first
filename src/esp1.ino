@@ -13,7 +13,7 @@ void setup() {
 void loop() {
     struct tm timeinfo;
     if (!getLocalTime(&timeinfo)) {
-        Serial.println("Failed to obtain time");
+        Serial.println("erreur au niveau du temps");
         return;
     }
 
@@ -21,7 +21,7 @@ void loop() {
     strftime(timeString, sizeof(timeString), "%Y-%m-%d %H:%M:%S", &timeinfo);
     Serial.println(timeString);
 
-    int value = 45;  // Votre logique pour lire la valeur du capteur
+    int value = random(0, 60);  // Générer une valeur aléatoire entre 0 et 45 inclus
     Serial.println(value, DEC);
 
     // Envoyer les données au serveur
