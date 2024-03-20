@@ -21,7 +21,7 @@ void loop() {
     strftime(timeString, sizeof(timeString), "%Y-%m-%d %H:%M:%S", &timeinfo);
     Serial.println(timeString);
 
-    int value = random(0, 60);  // Générer une valeur aléatoire entre 0 et 45 inclus
+    int value = random(0, 100);  // Générer une valeur aléatoire entre 0 et 45 inclus
     Serial.println(value, DEC);
 
     // Envoyer les données au serveur

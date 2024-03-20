@@ -38,9 +38,9 @@ void sendDataToServer(int value) {
     // Construire l'objet JSON(adaptable pour charque microcontroleur)
     DynamicJsonDocument jsonDocument(1024); // Taille du document JSON, ajustez si nécessaire
     jsonDocument["ID"] = currentID;
-    jsonDocument["Type de Mesure"] = "Capteur de son";
+    jsonDocument["Type de Mesure"] = "Moisissure";
     jsonDocument["Valeur"] = value;
-    jsonDocument["Nom Objet"] = "esp32(1)";
+    jsonDocument["Nom Objet"] = "esp32(3)";
     jsonDocument["Adresse IP"] = localIP;
 
     // Sérialiser l'objet JSON en chaîne
